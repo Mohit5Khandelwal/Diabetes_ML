@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Diabetes Prediction Result</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: #333; /* Dark gray */
+            border: 2px solid #555; /* Darker gray border */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888; /* Box shadow */
+            color: white;
+        }
+        h2 {
+            font-size: 28px;
+            text-align: center;
+        }
+        .alert {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            transition: background-color 0.5s, color 0.5s; /* Transition effect */
+        }
+        .alert:hover {
+            background-color: #007bff; /* Blue color on hover */
+            color: white;
+        }
+        .btn-back {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Final Result</h2>
+        <div class="alert alert-{{ result_class }}">
+            <strong> The Person is {{ result }}</strong>
+        </div>
+        
+    </div>
+</body>
+</html>
